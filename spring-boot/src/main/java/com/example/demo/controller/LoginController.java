@@ -7,6 +7,7 @@ import com.example.demo.payload.request.LoginRequest;
 import com.example.demo.payload.response.JwtAuthenticationResponse;
 import com.example.demo.payload.response.MessageResponse;
 import com.example.demo.service.AccountService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Set;
 
 @RestController
+@Api(value = "Login API", description = "Login DOC")
 @RequestMapping("api")
 public class LoginController {
     @Autowired
