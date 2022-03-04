@@ -16,7 +16,7 @@ export class LoginFormComponent implements OnInit {
     ]),
     password: new FormControl('')
   });
-  constructor(public authService: AuthService) { }
+  // constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
   }

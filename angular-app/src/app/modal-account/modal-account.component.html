@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h2 class="modal-title" id="exampleModalLabel">{{title}}</h2>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+</div>
+<div class="modal-body">
+    <mdb-form-control>
+        <div class="d-flex align-items-start bg-light mb-3" style="height: 100px;">
+            <div class="col">
+                <label mdbLabel class="form-label" for="form1">First Name</label>
+                <input mdbInput type="text" id="form1" class="form-control" />
+            </div>
+            <div class="col">
+                <label mdbLabel class="form-label" for="form1">Last Name</label>
+                <input mdbInput type="text" id="form1" class="form-control" />
+            </div>
+            <div class="col">
+                <label mdbLabel class="form-label" for="form1">Email</label>
+                <input mdbInput type="text" id="form1" class="form-control" />
+            </div>
+        </div>
+    </mdb-form-control>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+        Close
+    </button>
+    <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+</div>

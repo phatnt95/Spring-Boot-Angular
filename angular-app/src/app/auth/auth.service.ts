@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { map, Observable } from 'rxjs';
 
-@Injectable()
+// @Injectable()
 export class AuthService {
     public token: string = 'undefined';
 

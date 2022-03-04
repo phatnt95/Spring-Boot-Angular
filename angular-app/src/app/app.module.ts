@@ -15,13 +15,25 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { AuthHtppInterceptorService } from './auth/auth-htpp-interceptor.service';
 import { AuthService } from './auth/auth.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { MdbCustomizeModule } from './mdb-customize/mdb-customize.module';
+import { AccountComponent } from './account/account.component';
+import { ModalAccountComponent } from './modal-account/modal-account.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginFormComponent,
     HomeComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    DashboardComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainLayoutComponent,
+    AccountComponent,
+    ModalAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +42,8 @@ import { JwtHelperService } from '@auth0/angular-jwt';
     BrowserAnimationsModule,
     MaterialModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MdbCustomizeModule,
   ],
   providers: [
     {
