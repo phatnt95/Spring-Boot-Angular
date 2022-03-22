@@ -10,18 +10,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Role {
-    @Id
-    @SequenceGenerator(
-            name = "role_sequence",
-            sequenceName = "role_sequence",
-            allocationSize = 1
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "role_sequence"
-    )
-    private Long id;
-    private String roleCode;
-    private String roleName;
+public class Role extends AbstractModel{
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private ERole name;
 }

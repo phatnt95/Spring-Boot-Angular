@@ -45,7 +45,7 @@ export class AccountComponent implements OnInit {
       modalClass: 'modal-xl',
       data: {
         title: 'EDIT ACCOUNT',
-        data: this.selectedItem
+        dataBinding: this.selectedItem
       },
     });
   }

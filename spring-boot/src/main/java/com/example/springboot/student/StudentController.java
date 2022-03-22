@@ -1,5 +1,6 @@
 package com.example.springboot.student;
 
+import com.sdadas.spring2ts.annotations.SharedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

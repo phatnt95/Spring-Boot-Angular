@@ -9,6 +9,7 @@ import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
 export class ModalAccountComponent implements OnInit {
 
   title:string='CREATE ACCOUNT';
+  dataBinding:any;
 
   constructor(public modalRef: MdbModalRef<ModalAccountComponent>) { }
 

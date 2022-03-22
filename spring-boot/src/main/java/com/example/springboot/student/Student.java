@@ -1,11 +1,14 @@
 package com.example.springboot.student;
 
+import com.sdadas.spring2ts.annotations.SharedModel;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
 @Entity
 @Table
+@SharedModel
 public class Student {
     @Id
     @SequenceGenerator(

@@ -1,15 +1,27 @@
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th *ngFor="let header of dataGridHeader">{{header}}</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of sampleData; index as i" (click)="onSelect(item);" (dblclick)="onDoubleClick(item);">
-            <th>{{i+1}}</th>
-            <td>{{item.firstName}}</td>
-            <td>{{item.lastName}}</td>
-            <td>{{item.email}}</td>
-        </tr>
-    </tbody>
-</table>
+
+<div class="container-fluid">
+    <div class="d-flex align-items-start bg-light mb-2" style="margin: top 10px;">
+        <div class="col">
+            <input type="search" class="form-control" style="width: 250px;"
+                placeholder="Filter text" aria-label="Search" />
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="float: right;">Button</button>
+        </div>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th *ngFor="let header of dataGridHeader">{{header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of sampleData; index as i" (click)="onSelect(item);" (dblclick)="onDoubleClick(item);">
+                <th>{{i+1}}</th>
+                <td>{{item.firstName}}</td>
+                <td>{{item.lastName}}</td>
+                <td>{{item.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
